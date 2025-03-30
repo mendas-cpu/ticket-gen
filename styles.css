@@ -16,7 +16,7 @@ body{
     background-repeat: no-repeat;
     font-family: var(--font-family);
     color: white;
-    height: 100vh;
+    height: 100svh;
     text-align: center;
     display: flex;
     flex-direction: column;
