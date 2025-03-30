@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  
+  <title>Conference ticket generator</title>
+
+</head>
+<body>
+  <div class="images-top">
+    <div id="image-top1">
+      <img src="./assets/images/pattern-circle.svg" id="img4">
+    </div>
+    <div id="image-top2">
+      <img src="./assets/images/pattern-squiggly-line-top.svg" id="img7">
+    </div>
+  </div>
+  
+  <img src="./assets/images/pattern-lines.svg" id="img3">
+  <div class="header"><img src="./assets/images/logo-full.svg"></div>
+  <div class="container">  
+    <div class="box1" id="header1"><h1>Your Journey to Coding Conf 2025 Starts Here!</h1>
+      <p>Secure your spot at next year's biggest coding conference.</p>
+    </div>
+      <div class="drop-files">
+        <p>Upload Files</p><br>
+        
+        <form method="post">
+          <label for="logo-drop" id="logo-label"><img id="img1" src="./assets/images/icon-upload.svg"><br>Drag and drop or click to upload</label>
+          <input type="file" name="logo-drop" id="logo-drop" accept="image/png, image/jpeg" required>
+          <p id="p2"><img src="./assets/images/icon-info.svg" id="img2">Upload your photo (JPG or PNG, max size: 500KB).</p>
+          <label for="username">Full Name:</label>
+          <input type="text" name="username" required>
+          <p class="error-alert"><img id="error-img" src="./assets/images/icon-info.svg">Please Fill Out This Field.</p>
+          <label for="e-mail">Email Address</label>
+          <input type="email" name="e-mail" placeholder="example@email.com" required>
+          <p class="error-alert"><img id="error-img" src="./assets/images/icon-info.svg">Your E-mail Structure Looks Incorrect.</p>
+          <label for="githubUser">Github Username:</label>
+          <input type="text" name="githubUser" placeholder="@yourusername" required>
+          <p class="error-alert"><img id="error-img" src="./assets/images/icon-info.svg">Enter a Valid Github Username.</p>
+          <button type="submit" id="submitBtn">Generate My Ticket</button>
+        </form>
+      </div>
+      
+  </div>
+  <div class="images-bottom">
+    <img src="./assets/images/pattern-squiggly-line-bottom-desktop.svg" id="img5">
+    <img src="./assets/images/pattern-circle.svg" id="img6">
+
+  </div>
+  
+    
+
+  <script src="./qrcodejs-master/qrcode.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
+<!--
+
+  Generated tickets starts  
+
+  
+  
+
+ Generated tickets ends 
+-->

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="./styles.css">
+  
+  <title>Conference ticket generator</title>
+
+</head>
+<body>
+  <div class="images-top">
+    <div id="image-top1">
+      <img src="./assets/images/pattern-circle.svg" id="img4">
+    </div>
+    <div id="image-top2">
+      <img src="./assets/images/pattern-squiggly-line-top.svg" id="img7">
+    </div>
+  </div>
+  <img src="./assets/images/pattern-lines.svg" id="img3">
+  <div class="header"><img src="./assets/images/logo-full.svg"></div>
+  <div class="container">
+    <div class="box1"><p id="p-header">Congrats, <a id="name-user"></a>!<br>
+      Your ticket is ready.</p>
+      <p id="p-congrats">We've emailed your ticket to<br> <a id="email-user"></a>  and will send updates in the run up to the event.
+      </p>
+    </div>
+    <div class="generated-ticket">
+      <img src="./assets/images/logo-full.svg" id="imgt1">
+      <img src="./assets/images/pattern-ticket.svg" id="imgt2">
+      <p id="pt1">Jan 31, 2025 / Austin, TX</p>
+      <p id="pt2"></p>
+      <div id="qrcode"></div>
+    </div>
+      </div>
+  </div>
+  <div class="images-bottom">
+    <img src="./assets/images/pattern-squiggly-line-bottom-desktop.svg" id="img5">
+  </div>
+    
+    
+
+  <script src="./qrcodejs-master/qrcode.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("name-user").textContent = localStorage.getItem("username");
+    document.getElementById("email-user").textContent = localStorage.getItem("email");
+    document.getElementById("pt2").textContent = "#" + localStorage.getItem("ticketNumber").padStart(4, 0);
+
+    const qrcodeContainer = document.getElementById("qrcode");
+    if (!qrcodeContainer) {
+        console.error("QR code container not found.");
+        return;
+    }
+
+    const githubValue = localStorage.getItem("githubUser");
+    if (githubValue) {
+        new QRCode(qrcodeContainer, {
+            text: githubValue,
+            width: 64,
+            height: 64,
+        });
+    } else {
+        console.warn("GitHub username is missing. QR code not generated.");
+    }
+});</script>
+</body>
+</html>
