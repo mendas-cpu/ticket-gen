@@ -257,7 +257,7 @@ form button:hover{
     }
 
     form {
-        width: 80%; 
+        width: 95%; 
     }
 
     form input, form button {
@@ -276,6 +276,12 @@ form button:hover{
 }
 
 @media (max-width: 480px) {
+    body {
+        background-image: url(./assets/images/background-mobile.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
     .container {
         width: 100%; 
         padding: 5px;
