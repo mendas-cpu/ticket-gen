@@ -29,10 +29,11 @@
     </div>
     <div class="generated-ticket">
       <img src="./assets/images/logo-full.svg" id="imgt1">
-      <img src="./assets/images/pattern-ticket.svg" id="imgt2">
-      <p id="pt1">Jan 31, 2025 / Austin, TX</p>
-      <p id="pt2"></p>
-      <div id="qrcode"></div>
+      <div class="ticket-content">
+        <p id="pt1">Jan 31, 2025 / Austin, TX</p>
+        <p id="pt2"></p>
+        <div id="qrcode"><div class="divwsayii"><p id="user-info"></p><img src="./assets/images/icon-github.svg"></div></div>
+      </div>
     </div>
       </div>
   </div>
@@ -61,6 +62,7 @@
             width: 64,
             height: 64,
         });
+        document.getElementById("user-info").textContent = githubValue;
     } else {
         console.warn("GitHub username is missing. QR code not generated.");
     }
