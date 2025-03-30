@@ -10,7 +10,7 @@
 }
 body{
     margin: 0;
-    background-image: url(./assets/images/background-desktop.png);
+    background-image: url(./assets/images/background-mobile.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -84,7 +84,7 @@ label{
     left: 0;
     justify-content: space-between; 
     z-index: -10;
-    margin-top: auto; /* Push to bottom */
+    margin-top: auto; 
 }
 form{
     display: flex;
@@ -189,12 +189,6 @@ form button:hover{
     flex-direction: column;
     align-items: center; 
     text-align: center;
-}
-#imgt1{
-    
-}
-#imgt2{
-
 }
 #pt1{
     text-align: left;
