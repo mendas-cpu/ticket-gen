@@ -10,7 +10,7 @@
 }
 body{
     margin: 0;
-    background-image: url(./assets/images/background-mobile.png);
+    background-image: url(./assets/images/background-desktop.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -244,6 +244,12 @@ form button:hover{
     margin-left: 0px;
 }
 @media (max-width: 768px) {
+    body {
+        background-image: url(./assets/images/background-mobile.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
     .container {
         width: 768px; 
         padding: 10px;
