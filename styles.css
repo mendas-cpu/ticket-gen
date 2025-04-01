@@ -14,7 +14,6 @@ body{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     font-family: var(--font-family);
     color: white;
     height: 100%;
@@ -61,21 +60,21 @@ label{
     justify-content: space-between;
     align-items: flex-start;
     width: fit-content;
-    z-index: -10;
+    z-index: -1;
 
 }
 #image-top2{
     display: flex;
     justify-content: flex-end;
     width: fit-content;
-    z-index: -10;
+    z-index: -1;
 
 }
 .images-top{
     position: fixed;
     display: flex;
     justify-content: space-between;
-    z-index: -10;
+    z-index: -1;
     gap: 900px;
 }
 .images-bottom{
@@ -85,7 +84,7 @@ label{
     bottom: 0;
     left: 0;
     justify-content: space-between; 
-    z-index: -10;
+    z-index: -1;
     margin-top: auto; 
 }
 #imgt1{
@@ -94,7 +93,7 @@ label{
     margin-bottom: 0px;
     width: 200px;
     height: 100%;
-    z-index: -10;
+    z-index: -1;
 }
 #pt1{
     margin-top: 0px;
